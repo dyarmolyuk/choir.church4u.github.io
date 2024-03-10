@@ -1,0 +1,821 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сферы духовной одаренности</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div id="app">
+        <h1>Сферы духовной одаренности</h1>
+        <form id="quizForm">
+
+            <div class="question" data-category="Вспоможение">
+                <p>
+                    1. Мне нравится делать незаметную работу и заботиться о мелких деталях.
+                </p>
+                <input type="radio" name="q1" value="-2"> это совсем не про меня<br>
+                <input type="radio" name="q1" value="-1"> скорее нет, чем да<br>
+                <input type="radio" name="q1" value="0"> нейтрально, не знаю<br>
+                <input type="radio" name="q1" value="1"> да, это про меня, но не ярко выражено<br>
+                <input type="radio" name="q1" value="2"> это на 100% я!<br>
+            </div>
+
+            <div class="question" data-category="Лидерство">
+                <p>
+                    2. Обычно я беру на себя ответственность в группе, где нет лидера.
+                </p>
+                <input type="radio" name="q2" value="-2"> это совсем не про меня<br>
+                <input type="radio" name="q2" value="-1"> скорее нет, чем да<br>
+                <input type="radio" name="q2" value="0"> нейтрально, не знаю<br>
+                <input type="radio" name="q2" value="1"> да, это про меня, но не ярко выражено<br>
+                <input type="radio" name="q2" value="2"> это на 100% я!<br>
+            </div>
+
+            <div class="question" data-category="Гостеприимство">
+                <p>
+                    3. Я обычно замечаю, кто в группе остается в стороне от остальных и помогаю им влиться в коллектив.
+                </p>
+                <input type="radio" name="q3" value="-2"> это совсем не про меня<br>
+                <input type="radio" name="q3" value="-1"> скорее нет, чем да<br>
+                <input type="radio" name="q3" value="0"> нейтрально, не знаю<br>
+                <input type="radio" name="q3" value="1"> да, это про меня, но не ярко выражено<br>
+                <input type="radio" name="q3" value="2"> это на 100% я!<br>
+            </div>
+
+            <div class="question" data-category="Восстановление">
+                <p>
+                    4. Когда я вижу бездомного, алкоголика, наркомана моё сердце сжимается от сострадания, и я хочу
+                    помочь ему.
+                </p>
+                <input type="radio" name="q4" value="-2"> это совсем не про меня<br>
+                <input type="radio" name="q4" value="-1"> скорее нет, чем да<br>
+                <input type="radio" name="q4" value="0"> нейтрально, не знаю<br>
+                <input type="radio" name="q4" value="1"> да, это про меня, но не ярко выражено<br>
+                <input type="radio" name="q4" value="2"> это на 100% я!<br>
+            </div>
+
+            <div class="question" data-category="Управление">
+                <p>
+                    5. У меня есть способность организовать идеи, людей, мероприятия.
+                </p>
+                <input type="radio" name="q5" value="-2"> это совсем не про меня<br>
+                <input type="radio" name="q5" value="-1"> скорее нет, чем да<br>
+                <input type="radio" name="q5" value="0"> нейтрально, не знаю<br>
+                <input type="radio" name="q5" value="1"> да, это про меня, но не ярко выражено<br>
+                <input type="radio" name="q5" value="2"> это на 100% я!<br>
+            </div>
+
+            <div class="question" data-category="Различение">
+                <p>
+                    6. Люди часто говорят, что я хорошо разбираюсь в духовных вопросах.
+                </p>
+                <input type="radio" name="q6" value="-2"> это совсем не про меня<br>
+                <input type="radio" name="q6" value="-1"> скорее нет, чем да<br>
+                <input type="radio" name="q6" value="0"> нейтрально, не знаю<br>
+                <input type="radio" name="q6" value="1"> да, это про меня, но не ярко выражено<br>
+                <input type="radio" name="q6" value="2"> это на 100% я!<br>
+            </div>
+
+            <div class="question" data-category="Вера">
+                <p>
+                    7. Я уверен, что могу совершить великие дела во славу Божью.
+                </p>
+                <input type="radio" name="q7" value="-2"> это совсем не про меня<br>
+                <input type="radio" name="q7" value="-1"> скорее нет, чем да<br>
+                <input type="radio" name="q7" value="0"> нейтрально, не знаю<br>
+                <input type="radio" name="q7" value="1"> да, это про меня, но не ярко выражено<br>
+                <input type="radio" name="q7" value="2"> это на 100% я!<br>
+            </div>
+
+            <div class="question" data-category="Даяние">
+                <p>
+                    8. Мне нравится финансово благословлять нуждающихся.
+                </p>
+                <input type="radio" name="q8" value="-2"> это совсем не про меня<br>
+                <input type="radio" name="q8" value="-1"> скорее нет, чем да<br>
+                <input type="radio" name="q8" value="0"> нейтрально, не знаю<br>
+                <input type="radio" name="q8" value="1"> да, это про меня, но не ярко выражено<br>
+                <input type="radio" name="q8" value="2"> это на 100% я!<br>
+            </div>
+
+            <div class="question" data-category="Милосердие">
+                <p>
+                    9. Мне нравится служить утешением тем, кто находится в больницах, интернатах, домах престарелых и
+                    т.д.
+                </p>
+                <input type="radio" name="q9" value="-2"> это совсем не про меня<br>
+                <input type="radio" name="q9" value="-1"> скорее нет, чем да<br>
+                <input type="radio" name="q9" value="0"> нейтрально, не знаю<br>
+                <input type="radio" name="q9" value="1"> да, это про меня, но не ярко выражено<br>
+                <input type="radio" name="q9" value="2"> это на 100% я!<br>
+            </div>
+
+            <div class="question" data-category="Мудрость">
+                <p>
+                    10. Я часто интуитивно понимаю, какие шаги надо предпринять для практического решения какой-нибудь
+                    сложной проблемы.
+                </p>
+                <input type="radio" name="q10" value="-2"> это совсем не про меня<br>
+                <input type="radio" name="q10" value="-1"> скорее нет, чем да<br>
+                <input type="radio" name="q10" value="0"> нейтрально, не знаю<br>
+                <input type="radio" name="q10" value="1"> да, это про меня, но не ярко выражено<br>
+                <input type="radio" name="q10" value="2"> это на 100% я!<br>
+            </div>
+
+            <div class="question" data-category="Увещевание">
+                <p>
+                    11. Мне нравится ободрять упавших духом и помогать им мудрым советом.
+                </p>
+                <input type="radio" name="q11" value="-2"> это совсем не про меня<br>
+                <input type="radio" name="q11" value="-1"> скорее нет, чем да<br>
+                <input type="radio" name="q11" value="0"> нейтрально, не знаю<br>
+                <input type="radio" name="q11" value="1"> да, это про меня, но не ярко выражено<br>
+                <input type="radio" name="q11" value="2"> это на 100% я!<br>
+            </div>
+
+            <div class="question" data-category="Учительство">
+                <p>
+                    12. У меня есть способность, тщательно изучив какой-нибудь отрывок из Библии, передать другим то,
+                    что я в нем увидел.
+                </p>
+                <input type="radio" name="q12" value="-2"> это совсем не про меня<br>
+                <input type="radio" name="q12" value="-1"> скорее нет, чем да<br>
+                <input type="radio" name="q12" value="0"> нейтрально, не знаю<br>
+                <input type="radio" name="q12" value="1"> да, это про меня, но не ярко выражено<br>
+                <input type="radio" name="q12" value="2"> это на 100% я!<br>
+            </div>
+
+            <div class="question" data-category="Пасторство">
+                <p>
+                    13. Мне нравиться заботиться о людях, быть для них духовной поддержкой, молиться за них.
+                </p>
+                <input type="radio" name="q13" value="-2"> это совсем не про меня<br>
+                <input type="radio" name="q13" value="-1"> скорее нет, чем да<br>
+                <input type="radio" name="q13" value="0"> нейтрально, не знаю<br>
+                <input type="radio" name="q13" value="1"> да, это про меня, но не ярко выражено<br>
+                <input type="radio" name="q13" value="2"> это на 100% я!<br>
+            </div>
+
+            <div class="question" data-category="Миссионерство">
+                <p>
+                    14. У меня есть способности к изучению иностранных языков.
+                </p>
+                <input type="radio" name="q14" value="-2"> это совсем не про меня<br>
+                <input type="radio" name="q14" value="-1"> скорее нет, чем да<br>
+                <input type="radio" name="q14" value="0"> нейтрально, не знаю<br>
+                <input type="radio" name="q14" value="1"> да, это про меня, но не ярко выражено<br>
+                <input type="radio" name="q14" value="2"> это на 100% я!<br>
+            </div>
+
+            <div class="question" data-category="Евангелизм">
+                <p>
+                    15. У меня получается завязывать и поддерживать отношения с неверующими в надежде рассказать им о
+                    Христе.
+                </p>
+                <input type="radio" name="q15" value="-2"> это совсем не про меня<br>
+                <input type="radio" name="q15" value="-1"> скорее нет, чем да<br>
+                <input type="radio" name="q15" value="0"> нейтрально, не знаю<br>
+                <input type="radio" name="q15" value="1"> да, это про меня, но не ярко выражено<br>
+                <input type="radio" name="q15" value="2"> это на 100% я!<br>
+            </div>
+
+            <div class="question" data-category="Ходатайство">
+                <p>
+                    16. Всякий раз, когда я слышу о какой-то нужде, я чувствую настоятельное побуждение молиться о ней.
+                </p>
+                <input type="radio" name="q16" value="-2"> это совсем не про меня<br>
+                <input type="radio" name="q16" value="-1"> скорее нет, чем да<br>
+                <input type="radio" name="q16" value="0"> нейтрально, не знаю<br>
+                <input type="radio" name="q16" value="1"> да, это про меня, но не ярко выражено<br>
+                <input type="radio" name="q16" value="2"> это на 100% я!<br>
+            </div>
+
+            <div class="question" data-category="Лидерство">
+                <p>
+                    17. Когда я прошу людей сделать что-то важное для служения и церкви, они обычно соглашаются.
+                </p>
+                <input type="radio" name="q17" value="-2"> это совсем не про меня<br>
+                <input type="radio" name="q17" value="-1"> скорее нет, чем да<br>
+                <input type="radio" name="q17" value="0"> нейтрально, не знаю<br>
+                <input type="radio" name="q17" value="1"> да, это про меня, но не ярко выражено<br>
+                <input type="radio" name="q17" value="2"> это на 100% я!<br>
+            </div>
+
+            <div class="question" data-category="Гостеприимство">
+                <p>
+                    18. Я люблю принимать гостей и ухаживать за ними, чтобы они чувствовали себя как дома.
+                </p>
+                <input type="radio" name="q18" value="-2"> это совсем не про меня<br>
+                <input type="radio" name="q18" value="-1"> скорее нет, чем да<br>
+                <input type="radio" name="q18" value="0"> нейтрально, не знаю<br>
+                <input type="radio" name="q18" value="1"> да, это про меня, но не ярко выражено<br>
+                <input type="radio" name="q18" value="2"> это на 100% я!<br>
+            </div>
+
+            <div class="question" data-category="Различение">
+                <p>
+                    19. Я умею глубоко видеть характер человека и распознавать, действительно ли он духовен или это
+                    только видимость.
+                </p>
+                <input type="radio" name="q19" value="-2"> это совсем не про меня<br>
+                <input type="radio" name="q19" value="-1"> скорее нет, чем да<br>
+                <input type="radio" name="q19" value="0"> нейтрально, не знаю<br>
+                <input type="radio" name="q19" value="1"> да, это про меня, но не ярко выражено<br>
+                <input type="radio" name="q19" value="2"> это на 100% я!<br>
+            </div>
+
+            <div class="question" data-category="Вера">
+                <p>
+                    20. Я часто по вере начинаю дела, за которые никто другой даже не собирается браться, и обычно
+                    достигаю успеха.
+                </p>
+                <input type="radio" name="q20" value="-2"> это совсем не про меня<br>
+                <input type="radio" name="q20" value="-1"> скорее нет, чем да<br>
+                <input type="radio" name="q20" value="0"> нейтрально, не знаю<br>
+                <input type="radio" name="q20" value="1"> да, это про меня, но не ярко выражено<br>
+                <input type="radio" name="q20" value="2"> это на 100% я!<br>
+            </div>
+
+            <div class="question" data-category="Даяние">
+                <p>
+                    21. Я с радостью жертвую в церковь больше десяти процентов дохода.
+                </p>
+                <input type="radio" name="q21" value="-2"> это совсем не про меня<br>
+                <input type="radio" name="q21" value="-1"> скорее нет, чем да<br>
+                <input type="radio" name="q21" value="0"> нейтрально, не знаю<br>
+                <input type="radio" name="q21" value="1"> да, это про меня, но не ярко выражено<br>
+                <input type="radio" name="q21" value="2"> это на 100% я!<br>
+            </div>
+
+            <div class="question" data-category="Милосердие">
+                <p>
+                    22. Я испытываю особое сострадание к старикам и одиноким, и с удовольствием жертвую своим временем,
+                    чтобы поднять им настроение и как-то послужить.
+                </p>
+                <input type="radio" name="q22" value="-2"> это совсем не про меня<br>
+                <input type="radio" name="q22" value="-1"> скорее нет, чем да<br>
+                <input type="radio" name="q22" value="0"> нейтрально, не знаю<br>
+                <input type="radio" name="q22" value="1"> да, это про меня, но не ярко выражено<br>
+                <input type="radio" name="q22" value="2"> это на 100% я!<br>
+            </div>
+
+            <div class="question" data-category="Мудрость">
+                <p>
+                    23. Когда предстояло принять сложное решение, и никто не знал, что делать и какой вариант
+                    предпочесть, Бог давал мне способность выбрать правильный из нескольких вариантов.
+                </p>
+                <input type="radio" name="q23" value="-2"> это совсем не про меня<br>
+                <input type="radio" name="q23" value="-1"> скорее нет, чем да<br>
+                <input type="radio" name="q23" value="0"> нейтрально, не знаю<br>
+                <input type="radio" name="q23" value="1"> да, это про меня, но не ярко выражено<br>
+                <input type="radio" name="q23" value="2"> это на 100% я!<br>
+            </div>
+
+            <div class="question" data-category="Увещевание">
+                <p>
+                    24. Я чувствую глубокое удовлетворение, воодушевляя других, особенно в том, что касается их
+                    духовного роста.
+                </p>
+                <input type="radio" name="q24" value="-2"> это совсем не про меня<br>
+                <input type="radio" name="q24" value="-1"> скорее нет, чем да<br>
+                <input type="radio" name="q24" value="0"> нейтрально, не знаю<br>
+                <input type="radio" name="q24" value="1"> да, это про меня, но не ярко выражено<br>
+                <input type="radio" name="q24" value="2"> это на 100% я!<br>
+            </div>
+
+            <div class="question" data-category="Пасторство">
+                <p>
+                    25. Мне нравится участвовать в жизни людей и помогать им расти духовно.
+                </p>
+                <input type="radio" name="q25" value="-2"> это совсем не про меня<br>
+                <input type="radio" name="q25" value="-1"> скорее нет, чем да<br>
+                <input type="radio" name="q25" value="0"> нейтрально, не знаю<br>
+                <input type="radio" name="q25" value="1"> да, это про меня, но не ярко выражено<br>
+                <input type="radio" name="q25" value="2"> это на 100% я!<br>
+            </div>
+
+            <div class="question" data-category="Миссионерство">
+                <p>
+                    26. Мне легко приспособиться к другому языку, культуре, образу жизни.
+                </p>
+                <input type="radio" name="q26" value="-2"> это совсем не про меня<br>
+                <input type="radio" name="q26" value="-1"> скорее нет, чем да<br>
+                <input type="radio" name="q26" value="0"> нейтрально, не знаю<br>
+                <input type="radio" name="q26" value="1"> да, это про меня, но не ярко выражено<br>
+                <input type="radio" name="q26" value="2"> это на 100% я!<br>
+            </div>
+
+            <div class="question" data-category="Евангелизм">
+                <p>
+                    27. Я с легкостью могу призвать даже незнакомого человека к покаянию.
+                </p>
+                <input type="radio" name="q27" value="-2"> это совсем не про меня<br>
+                <input type="radio" name="q27" value="-1"> скорее нет, чем да<br>
+                <input type="radio" name="q27" value="0"> нейтрально, не знаю<br>
+                <input type="radio" name="q27" value="1"> да, это про меня, но не ярко выражено<br>
+                <input type="radio" name="q27" value="2"> это на 100% я!<br>
+            </div>
+
+            <div class="question" data-category="Поклонение">
+                <p>
+                    28. Я считаю, что победа в духовной битве приходит именно через хвалу.
+                </p>
+                <input type="radio" name="q28" value="-2"> это совсем не про меня<br>
+                <input type="radio" name="q28" value="-1"> скорее нет, чем да<br>
+                <input type="radio" name="q28" value="0"> нейтрально, не знаю<br>
+                <input type="radio" name="q28" value="1"> да, это про меня, но не ярко выражено<br>
+                <input type="radio" name="q28" value="2"> это на 100% я!<br>
+            </div>
+
+            <div class="question" data-category="Вспоможение">
+                <p>
+                    29. Мне нравится помогать другим, избавляя их от повседневных обязанностей, чтобы они могли
+                    заниматься важными делами.
+                </p>
+                <input type="radio" name="q29" value="-2"> это совсем не про меня<br>
+                <input type="radio" name="q29" value="-1"> скорее нет, чем да<br>
+                <input type="radio" name="q29" value="0"> нейтрально, не знаю<br>
+                <input type="radio" name="q29" value="1"> да, это про меня, но не ярко выражено<br>
+                <input type="radio" name="q29" value="2"> это на 100% я!<br>
+            </div>
+
+            <div class="question" data-category="Лидерство">
+                <p>
+                    30. Я могу мотивировать и направлять группу людей, чтобы они достигли конкретной цели.
+                </p>
+                <input type="radio" name="q30" value="-2"> это совсем не про меня<br>
+                <input type="radio" name="q30" value="-1"> скорее нет, чем да<br>
+                <input type="radio" name="q30" value="0"> нейтрально, не знаю<br>
+                <input type="radio" name="q30" value="1"> да, это про меня, но не ярко выражено<br>
+                <input type="radio" name="q30" value="2"> это на 100% я!<br>
+            </div>
+
+            <div class="question" data-category="Гостеприимство">
+                <p>
+                    31. Мне нравится знакомиться с новыми людьми самому и знакомить их с другими братьями и сестрами.
+                </p>
+                <input type="radio" name="q31" value="-2"> это совсем не про меня<br>
+                <input type="radio" name="q31" value="-1"> скорее нет, чем да<br>
+                <input type="radio" name="q31" value="0"> нейтрально, не знаю<br>
+                <input type="radio" name="q31" value="1"> да, это про меня, но не ярко выражено<br>
+                <input type="radio" name="q31" value="2"> это на 100% я!<br>
+            </div>
+
+            <div class="question" data-category="Восстановление">
+                <p>
+                    32. Я бы больше хотел помогать разбитым людям восстанавливать их образ во Христе, чем служить тем, у
+                    кого в жизни всё достаточно хорошо.
+                </p>
+                <input type="radio" name="q32" value="-2"> это совсем не про меня<br>
+                <input type="radio" name="q32" value="-1"> скорее нет, чем да<br>
+                <input type="radio" name="q32" value="0"> нейтрально, не знаю<br>
+                <input type="radio" name="q32" value="1"> да, это про меня, но не ярко выражено<br>
+                <input type="radio" name="q32" value="2"> это на 100% я!<br>
+            </div>
+
+            <div class="question" data-category="Управление">
+                <p>
+                    33. Я умею делегировать, мне легко раздавать задания другим.
+                </p>
+                <input type="radio" name="q33" value="-2"> это совсем не про меня<br>
+                <input type="radio" name="q33" value="-1"> скорее нет, чем да<br>
+                <input type="radio" name="q33" value="0"> нейтрально, не знаю<br>
+                <input type="radio" name="q33" value="1"> да, это про меня, но не ярко выражено<br>
+                <input type="radio" name="q33" value="2"> это на 100% я!<br>
+            </div>
+
+            <div class="question" data-category="Различение">
+                <p>
+                    34. Я умею отличать правильное от неправильного в сложных духовных вопросах, в которых не могут
+                    разобраться другие люди.
+                </p>
+                <input type="radio" name="q34" value="-2"> это совсем не про меня<br>
+                <input type="radio" name="q34" value="-1"> скорее нет, чем да<br>
+                <input type="radio" name="q34" value="0"> нейтрально, не знаю<br>
+                <input type="radio" name="q34" value="1"> да, это про меня, но не ярко выражено<br>
+                <input type="radio" name="q34" value="2"> это на 100% я!<br>
+            </div>
+
+            <div class="question" data-category="Вера">
+                <p>
+                    35. Я абсолютно уверен в верности Бога и способен радоваться, видя невидимое, даже когда сталкиваюсь
+                    с серьезными проблемами.
+                </p>
+                <input type="radio" name="q35" value="-2"> это совсем не про меня<br>
+                <input type="radio" name="q35" value="-1"> скорее нет, чем да<br>
+                <input type="radio" name="q35" value="0"> нейтрально, не знаю<br>
+                <input type="radio" name="q35" value="1"> да, это про меня, но не ярко выражено<br>
+                <input type="radio" name="q35" value="2"> это на 100% я!<br>
+            </div>
+
+            <div class="question" data-category="Милосердие">
+                <p>
+                    36. Я хочу делать всё, что могу, для тех людей вокруг меня, кто нуждается в помощи, даже если для
+                    этого мне придется чем-то пожертвовать.
+                </p>
+                <input type="radio" name="q36" value="-2"> это совсем не про меня<br>
+                <input type="radio" name="q36" value="-1"> скорее нет, чем да<br>
+                <input type="radio" name="q36" value="0"> нейтрально, не знаю<br>
+                <input type="radio" name="q36" value="1"> да, это про меня, но не ярко выражено<br>
+                <input type="radio" name="q36" value="2"> это на 100% я!<br>
+            </div>
+
+            <div class="question" data-category="Мудрость">
+                <p>
+                    37. Люди часто обращаются ко мне за советом, когда не знают, как поступить в конкретной ситуации.
+                </p>
+                <input type="radio" name="q37" value="-2"> это совсем не про меня<br>
+                <input type="radio" name="q37" value="-1"> скорее нет, чем да<br>
+                <input type="radio" name="q37" value="0"> нейтрально, не знаю<br>
+                <input type="radio" name="q37" value="1"> да, это про меня, но не ярко выражено<br>
+                <input type="radio" name="q37" value="2"> это на 100% я!<br>
+            </div>
+
+            <div class="question" data-category="Увещевание">
+                <p>
+                    38. Мне нравится побуждать других стремиться к совершенству, особенно в сфере духовного роста,
+                    вдохновляя и не осуждая.
+                </p>
+                <input type="radio" name="q38" value="-2"> это совсем не про меня<br>
+                <input type="radio" name="q38" value="-1"> скорее нет, чем да<br>
+                <input type="radio" name="q38" value="0"> нейтрально, не знаю<br>
+                <input type="radio" name="q38" value="1"> да, это про меня, но не ярко выражено<br>
+                <input type="radio" name="q38" value="2"> это на 100% я!<br>
+            </div>
+
+            <div class="question" data-category="Учительство">
+                <p>
+                    39. Когда я преподаю библейское учение, то вижу реальный отклик от слушающих меня.
+                </p>
+                <input type="radio" name="q39" value="-2"> это совсем не про меня<br>
+                <input type="radio" name="q39" value="-1"> скорее нет, чем да<br>
+                <input type="radio" name="q39" value="0"> нейтрально, не знаю<br>
+                <input type="radio" name="q39" value="1"> да, это про меня, но не ярко выражено<br>
+                <input type="radio" name="q39" value="2"> это на 100% я!<br>
+            </div>
+
+            <div class="question" data-category="Ходатайство">
+                <p>
+                    40. Бог отвечал на многие мои молитвы за других людей.
+                </p>
+                <input type="radio" name="q40" value="-2"> это совсем не про меня<br>
+                <input type="radio" name="q40" value="-1"> скорее нет, чем да<br>
+                <input type="radio" name="q40" value="0"> нейтрально, не знаю<br>
+                <input type="radio" name="q40" value="1"> да, это про меня, но не ярко выражено<br>
+                <input type="radio" name="q40" value="2"> это на 100% я!<br>
+            </div>
+
+            <div class="question" data-category="Поклонение">
+                <p>
+                    41. Я стараюсь постоянно находиться в состоянии благодарения Бога, прославления и хвалы.
+                </p>
+                <input type="radio" name="q41" value="-2"> это совсем не про меня<br>
+                <input type="radio" name="q41" value="-1"> скорее нет, чем да<br>
+                <input type="radio" name="q41" value="0"> нейтрально, не знаю<br>
+                <input type="radio" name="q41" value="1"> да, это про меня, но не ярко выражено<br>
+                <input type="radio" name="q41" value="2"> это на 100% я!<br>
+            </div>
+
+            <div class="question" data-category="Вспоможение">
+                <p>
+                    42. Я люблю помогать другим людям в работе и в общественном признании особенно не нуждаюсь.
+                </p>
+                <input type="radio" name="q42" value="-2"> это совсем не про меня<br>
+                <input type="radio" name="q42" value="-1"> скорее нет, чем да<br>
+                <input type="radio" name="q42" value="0"> нейтрально, не знаю<br>
+                <input type="radio" name="q42" value="1"> да, это про меня, но не ярко выражено<br>
+                <input type="radio" name="q42" value="2"> это на 100% я!<br>
+            </div>
+
+            <div class="question" data-category="Лидерство">
+                <p>
+                    43. Люди уважают мое мнение и охотно выполняют мои указания.
+                </p>
+                <input type="radio" name="q43" value="-2"> это совсем не про меня<br>
+                <input type="radio" name="q43" value="-1"> скорее нет, чем да<br>
+                <input type="radio" name="q43" value="0"> нейтрально, не знаю<br>
+                <input type="radio" name="q43" value="1"> да, это про меня, но не ярко выражено<br>
+                <input type="radio" name="q43" value="2"> это на 100% я!<br>
+            </div>
+
+            <div class="question" data-category="Гостеприимство">
+                <p>
+                    44. Двери моего дома всегда открыты для проведения домашней группы, общения братьев и сестер.
+                </p>
+                <input type="radio" name="q44" value="-2"> это совсем не про меня<br>
+                <input type="radio" name="q44" value="-1"> скорее нет, чем да<br>
+                <input type="radio" name="q44" value="0"> нейтрально, не знаю<br>
+                <input type="radio" name="q44" value="1"> да, это про меня, но не ярко выражено<br>
+                <input type="radio" name="q44" value="2"> это на 100% я!<br>
+            </div>
+
+            <div class="question" data-category="Восстановление">
+                <p>
+                    45. Я бы очень хотел научиться профессионально служить людям с серьезными расстройствами психики.
+                </p>
+                <input type="radio" name="q45" value="-2"> это совсем не про меня<br>
+                <input type="radio" name="q45" value="-1"> скорее нет, чем да<br>
+                <input type="radio" name="q45" value="0"> нейтрально, не знаю<br>
+                <input type="radio" name="q45" value="1"> да, это про меня, но не ярко выражено<br>
+                <input type="radio" name="q45" value="2"> это на 100% я!<br>
+            </div>
+
+            <div class="question" data-category="Управление">
+                <p>
+                    46. Я способен спокойно принимать важные решения даже в состоянии стресса.
+                </p>
+                <input type="radio" name="q46" value="-2"> это совсем не про меня<br>
+                <input type="radio" name="q46" value="-1"> скорее нет, чем да<br>
+                <input type="radio" name="q46" value="0"> нейтрально, не знаю<br>
+                <input type="radio" name="q46" value="1"> да, это про меня, но не ярко выражено<br>
+                <input type="radio" name="q46" value="2"> это на 100% я!<br>
+            </div>
+
+            <div class="question" data-category="Вера">
+                <p>
+                    47. Я часто молюсь с верой, и Бог чудесным образом отвечает на такие молитвы.
+                </p>
+                <input type="radio" name="q47" value="-2"> это совсем не про меня<br>
+                <input type="radio" name="q47" value="-1"> скорее нет, чем да<br>
+                <input type="radio" name="q47" value="0"> нейтрально, не знаю<br>
+                <input type="radio" name="q47" value="1"> да, это про меня, но не ярко выражено<br>
+                <input type="radio" name="q47" value="2"> это на 100% я!<br>
+            </div>
+
+            <div class="question" data-category="Даяние">
+                <p>
+                    48. Я даю деньги людям, не ожидая возврата, и часто делаю это тайно, чтобы не знали от кого.
+                </p>
+                <input type="radio" name="q48" value="-2"> это совсем не про меня<br>
+                <input type="radio" name="q48" value="-1"> скорее нет, чем да<br>
+                <input type="radio" name="q48" value="0"> нейтрально, не знаю<br>
+                <input type="radio" name="q48" value="1"> да, это про меня, но не ярко выражено<br>
+                <input type="radio" name="q48" value="2"> это на 100% я!<br>
+            </div>
+
+            <div class="question" data-category="Учительство">
+                <p>
+                    49. У меня талант рассказывать просто о сложном.
+                </p>
+                <input type="radio" name="q49" value="-2"> это совсем не про меня<br>
+                <input type="radio" name="q49" value="-1"> скорее нет, чем да<br>
+                <input type="radio" name="q49" value="0"> нейтрально, не знаю<br>
+                <input type="radio" name="q49" value="1"> да, это про меня, но не ярко выражено<br>
+                <input type="radio" name="q49" value="2"> это на 100% я!<br>
+            </div>
+
+            <div class="question" data-category="Пасторство">
+                <p>
+                    50. Я помогаю христианам, отошедшим от Господа, восстановить отношения с Ним и вернуться в церковь.
+                </p>
+                <input type="radio" name="q50" value="-2"> это совсем не про меня<br>
+                <input type="radio" name="q50" value="-1"> скорее нет, чем да<br>
+                <input type="radio" name="q50" value="0"> нейтрально, не знаю<br>
+                <input type="radio" name="q50" value="1"> да, это про меня, но не ярко выражено<br>
+                <input type="radio" name="q50" value="2"> это на 100% я!<br>
+            </div>
+
+            <div class="question" data-category="Миссионерство">
+                <p>
+                    51. У меня нет расовых предрассудков, и я искренне вижу ценность людей, сильно отличающихся от меня
+                    самого
+                </p>
+                <input type="radio" name="q51" value="-2"> это совсем не про меня<br>
+                <input type="radio" name="q51" value="-1"> скорее нет, чем да<br>
+                <input type="radio" name="q51" value="0"> нейтрально, не знаю<br>
+                <input type="radio" name="q51" value="1"> да, это про меня, но не ярко выражено<br>
+                <input type="radio" name="q51" value="2"> это на 100% я!<br>
+            </div>
+
+            <div class="question" data-category="Евангелизм">
+                <p>
+                    52. У меня есть горячее желание помочь неверующим найти спасение во Христе.
+                </p>
+                <input type="radio" name="q52" value="-2"> это совсем не про меня<br>
+                <input type="radio" name="q52" value="-1"> скорее нет, чем да<br>
+                <input type="radio" name="q52" value="0"> нейтрально, не знаю<br>
+                <input type="radio" name="q52" value="1"> да, это про меня, но не ярко выражено<br>
+                <input type="radio" name="q52" value="2"> это на 100% я!<br>
+            </div>
+
+            <div class="question" data-category="Ходатайство">
+                <p>
+                    53. Мое любимое служение в церкви – молитвенное.
+                </p>
+                <input type="radio" name="q53" value="-2"> это совсем не про меня<br>
+                <input type="radio" name="q53" value="-1"> скорее нет, чем да<br>
+                <input type="radio" name="q53" value="0"> нейтрально, не знаю<br>
+                <input type="radio" name="q53" value="1"> да, это про меня, но не ярко выражено<br>
+                <input type="radio" name="q53" value="2"> это на 100% я!<br>
+            </div>
+
+            <div class="question" data-category="Поклонение">
+                <p>
+                    54. Прославление Бога для меня – это не только песни в церкви, это – образ моей жизни.
+                </p>
+                <input type="radio" name="q54" value="-2"> это совсем не про меня<br>
+                <input type="radio" name="q54" value="-1"> скорее нет, чем да<br>
+                <input type="radio" name="q54" value="0"> нейтрально, не знаю<br>
+                <input type="radio" name="q54" value="1"> да, это про меня, но не ярко выражено<br>
+                <input type="radio" name="q54" value="2"> это на 100% я!<br>
+            </div>
+
+            <div class="question" data-category="Вспоможение">
+                <p>
+                    55. Я с радостью готов взять на себя любое, даже самое незаметное, служение, если пастор попросит
+                    меня об этом.
+                </p>
+                <input type="radio" name="q55" value="-2"> это совсем не про меня<br>
+                <input type="radio" name="q55" value="-1"> скорее нет, чем да<br>
+                <input type="radio" name="q55" value="0"> нейтрально, не знаю<br>
+                <input type="radio" name="q55" value="1"> да, это про меня, но не ярко выражено<br>
+                <input type="radio" name="q55" value="2"> это на 100% я!<br>
+            </div>
+
+            <div class="question" data-category="Восстановление">
+                <p>
+                    56. Я легко готов уделить много часов и дней для того, чтобы помочь человеку выйти из состояния
+                    глубокой депрессии.
+                </p>
+                <input type="radio" name="q56" value="-2"> это совсем не про меня<br>
+                <input type="radio" name="q56" value="-1"> скорее нет, чем да<br>
+                <input type="radio" name="q56" value="0"> нейтрально, не знаю<br>
+                <input type="radio" name="q56" value="1"> да, это про меня, но не ярко выражено<br>
+                <input type="radio" name="q56" value="2"> это на 100% я!<br>
+            </div>
+
+            <div class="question" data-category="Управление">
+                <p>
+                    57. Мне нравиться быть в постоянном движении, организовывать людей, находить ресурсы, организовывать
+                    мероприятия.
+                </p>
+                <input type="radio" name="q57" value="-2"> это совсем не про меня<br>
+                <input type="radio" name="q57" value="-1"> скорее нет, чем да<br>
+                <input type="radio" name="q57" value="0"> нейтрально, не знаю<br>
+                <input type="radio" name="q57" value="1"> да, это про меня, но не ярко выражено<br>
+                <input type="radio" name="q57" value="2"> это на 100% я!<br>
+            </div>
+
+            <div class="question" data-category="Различение">
+                <p>
+                    58. Господь часто показывает мне что-то о других людях и ситуациях, что не видят другие.
+                </p>
+                <input type="radio" name="q58" value="-2"> это совсем не про меня<br>
+                <input type="radio" name="q58" value="-1"> скорее нет, чем да<br>
+                <input type="radio" name="q58" value="0"> нейтрально, не знаю<br>
+                <input type="radio" name="q58" value="1"> да, это про меня, но не ярко выражено<br>
+                <input type="radio" name="q58" value="2"> это на 100% я!<br>
+            </div>
+
+            <div class="question" data-category="Даяние">
+                <p>
+                    59. Когда я вижу материальную нужду другого человека, то очень хочу её восполнить.
+                </p>
+                <input type="radio" name="q59" value="-2"> это совсем не про меня<br>
+                <input type="radio" name="q59" value="-1"> скорее нет, чем да<br>
+                <input type="radio" name="q59" value="0"> нейтрально, не знаю<br>
+                <input type="radio" name="q59" value="1"> да, это про меня, но не ярко выражено<br>
+                <input type="radio" name="q59" value="2"> это на 100% я!<br>
+            </div>
+
+            <div class="question" data-category="Милосердие">
+                <p>
+                    60. Я часто помогаю бездомным. У меня не раз возникало желание привести их к себе домой: покормить,
+                    помыть, переодеть и как-то помочь им вернуться к нормальной жизни.
+                </p>
+                <input type="radio" name="q60" value="-2"> это совсем не про меня<br>
+                <input type="radio" name="q60" value="-1"> скорее нет, чем да<br>
+                <input type="radio" name="q60" value="0"> нейтрально, не знаю<br>
+                <input type="radio" name="q60" value="1"> да, это про меня, но не ярко выражено<br>
+                <input type="radio" name="q60" value="2"> это на 100% я!<br>
+            </div>
+
+            <div class="question" data-category="Мудрость">
+                <p>
+                    61. Книга Притч в Библии – одна из моих самых любимых
+                </p>
+                <input type="radio" name="q61" value="-2"> это совсем не про меня<br>
+                <input type="radio" name="q61" value="-1"> скорее нет, чем да<br>
+                <input type="radio" name="q61" value="0"> нейтрально, не знаю<br>
+                <input type="radio" name="q61" value="1"> да, это про меня, но не ярко выражено<br>
+                <input type="radio" name="q61" value="2"> это на 100% я!<br>
+            </div>
+
+            <div class="question" data-category="Увещевание">
+                <p>
+                    62. Мотивировать других жить посвященной жизнь для Бога – одно из моих любимых занятий. Мне кажется,
+                    что это действительно важно.
+                </p>
+                <input type="radio" name="q62" value="-2"> это совсем не про меня<br>
+                <input type="radio" name="q62" value="-1"> скорее нет, чем да<br>
+                <input type="radio" name="q62" value="0"> нейтрально, не знаю<br>
+                <input type="radio" name="q62" value="1"> да, это про меня, но не ярко выражено<br>
+                <input type="radio" name="q62" value="2"> это на 100% я!<br>
+            </div>
+
+            <div class="question" data-category="Учительство">
+                <p>
+                    63. Мне очень нравиться учиться самому и учить других людей.
+                </p>
+                <input type="radio" name="q63" value="-2"> это совсем не про меня<br>
+                <input type="radio" name="q63" value="-1"> скорее нет, чем да<br>
+                <input type="radio" name="q63" value="0"> нейтрально, не знаю<br>
+                <input type="radio" name="q63" value="1"> да, это про меня, но не ярко выражено<br>
+                <input type="radio" name="q63" value="2"> это на 100% я!<br>
+            </div>
+
+            <div class="question" data-category="Пасторство">
+                <p>
+                    64. Я стараюсь помочь другим людям стать частью церкви. Меня беспокоит, когда человек в церкви сам
+                    по себе.
+                </p>
+                <input type="radio" name="q64" value="-2"> это совсем не про меня<br>
+                <input type="radio" name="q64" value="-1"> скорее нет, чем да<br>
+                <input type="radio" name="q64" value="0"> нейтрально, не знаю<br>
+                <input type="radio" name="q64" value="1"> да, это про меня, но не ярко выражено<br>
+                <input type="radio" name="q64" value="2"> это на 100% я!<br>
+            </div>
+
+            <div class="question" data-category="Миссионерство">
+                <p>
+                    65. Я чувствую, что моя страна – не конечная точка моего пребывания.
+                </p>
+                <input type="radio" name="q65" value="-2"> это совсем не про меня<br>
+                <input type="radio" name="q65" value="-1"> скорее нет, чем да<br>
+                <input type="radio" name="q65" value="0"> нейтрально, не знаю<br>
+                <input type="radio" name="q65" value="1"> да, это про меня, но не ярко выражено<br>
+                <input type="radio" name="q65" value="2"> это на 100% я!<br>
+            </div>
+
+            <div class="question" data-category="Евангелизм">
+                <p>
+                    66. Мне кажется, что это самое главное в христианской жизни – приводить людей ко Христу.
+                </p>
+                <input type="radio" name="q66" value="-2"> это совсем не про меня<br>
+                <input type="radio" name="q66" value="-1"> скорее нет, чем да<br>
+                <input type="radio" name="q66" value="0"> нейтрально, не знаю<br>
+                <input type="radio" name="q66" value="1"> да, это про меня, но не ярко выражено<br>
+                <input type="radio" name="q66" value="2"> это на 100% я!<br>
+            </div>
+
+            <div class="question" data-category="Ходатайство">
+                <p>
+                    67. Я прочитал множество книг о молитве, и когда мне попадается новая – с воодушевлением принимаюсь
+                    за неё.
+                </p>
+                <input type="radio" name="q67" value="-2"> это совсем не про меня<br>
+                <input type="radio" name="q67" value="-1"> скорее нет, чем да<br>
+                <input type="radio" name="q67" value="0"> нейтрально, не знаю<br>
+                <input type="radio" name="q67" value="1"> да, это про меня, но не ярко выражено<br>
+                <input type="radio" name="q67" value="2"> это на 100% я!<br>
+            </div>
+
+            <div class="question" data-category="Поклонение">
+                <p>
+                    68. Когда я поклоняюсь Богу, то делаю это горячо. Меня не смущает, как на меня посмотрят.
+                </p>
+                <input type="radio" name="q68" value="-2"> это совсем не про меня<br>
+                <input type="radio" name="q68" value="-1"> скорее нет, чем да<br>
+                <input type="radio" name="q68" value="0"> нейтрально, не знаю<br>
+                <input type="radio" name="q68" value="1"> да, это про меня, но не ярко выражено<br>
+                <input type="radio" name="q68" value="2"> это на 100% я!<br>
+            </div>
+
+            <!-- Error Message -->
+            <div id="errorMessage"></div>
+
+            <!-- Submit Button -->
+            <button type="submit">Submit</button>
+        </form>
+
+        <!-- Results Section -->
+        <div id="results" style="display: none;">
+            <h2>Results</h2>
+            <div id="category1Results"></div>
+            <div id="category2Results"></div>
+            <div id="category3Results"></div>
+            <div id="category4Results"></div>
+            <div id="category5Results"></div>
+            <div id="category6Results"></div>
+            <div id="category7Results"></div>
+            <div id="category8Results"></div>
+            <div id="category9Results"></div>
+            <div id="category10Results"></div>
+            <div id="category11Results"></div>
+            <div id="category12Results"></div>
+            <div id="category13Results"></div>
+            <div id="category14Results"></div>
+            <div id="category15Results"></div>
+            <div id="category16Results"></div>
+            <div id="category17Results"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
